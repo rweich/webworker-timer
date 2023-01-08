@@ -1,0 +1,81 @@
+{
+  "name": "@rweich/webworker-timer",
+  "version": "0.0.0-development",
+  "description": "timers running inside webworkers",
+  "author": "@rweich",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.build.json",
+    "ci": "yarn type-check && yarn lint && yarn lint-tests && yarn test",
+    "clean": "rimraf ./dist/*",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint-tests": "eslint 'test/**/*.ts'",
+    "prepare": "husky install",
+    "type-check": "tsc --noEmit",
+    "test": "karma start"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@rweich/eslint-config": "^2.0.1",
+    "@rweich/prettier-config": "^2.0.0",
+    "@rweich/semantic-release-config": "^2.0.6",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "*",
+    "chai": "^4.3.4",
+    "husky": "^8.0.1",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-mocha": "^2.0.1",
+    "karma-typescript": "^5.5.3",
+    "lint-staged": "^13.0.3",
+    "mocha": "^10.1.0",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=14.17"
+  },
+  "repository": "rweich/webworker-timer",
+  "bugs": "https://github.com/rweich/webworker-timer/issues",
+  "keywords": [
+    "webworker",
+    "timer",
+    "setTimeout",
+    "setInterval",
+    "clearTimeout",
+    "clearInterval"
+  ],
+  "files": [
+    "README.md",
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@rweich"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "prettier --write",
+      "eslint --quiet --fix"
+    ]
+  },
+  "prettier": "@rweich/prettier-config",
+  "release": {
+    "extends": "@rweich/semantic-release-config"
+  }
+}
