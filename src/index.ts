@@ -21,7 +21,8 @@ type Timer = {
 const workerCallback = () => {
   const workerTimers = new Map<number, number>();
   addEventListener('message', ({ data }: { data: ToWorkerMessage }) => {
-    if (data.type === 'setInterval' || data.type === 'setTimeout') {
+    const type = data.type;
+    if (type === 'setInterval' || type === 'setTimeout') {
       workerTimers.set(
         data.timerId,
         self[data.type](() => postMessage({ timerId: data.timerId }), data.delay),
@@ -29,7 +30,7 @@ const workerCallback = () => {
       return;
     }
 
-    if (workerTimers.has(data.timerId) && (data.type === 'clearInterval' || data.type === 'clearTimeout')) {
+    if (workerTimers.has(data.timerId) && (type === 'clearInterval' || type === 'clearTimeout')) {
       self[data.type](workerTimers.get(data.timerId));
       workerTimers.delete(data.timerId);
     }
