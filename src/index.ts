@@ -25,13 +25,13 @@ const workerCallback = () => {
     if (type === 'setInterval' || type === 'setTimeout') {
       workerTimers.set(
         data.timerId,
-        self[data.type](() => postMessage({ timerId: data.timerId }), data.delay),
+        self[type](() => postMessage({ timerId: data.timerId }), data.delay),
       );
       return;
     }
 
     if (workerTimers.has(data.timerId) && (type === 'clearInterval' || type === 'clearTimeout')) {
-      self[data.type](workerTimers.get(data.timerId));
+      self[type](workerTimers.get(data.timerId));
       workerTimers.delete(data.timerId);
     }
   });
