@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/rweich/webworker-timer/compare/v1.0.1...v1.0.2) (2023-01-28)
+
+
+### Bug Fixes
+
+* extract type to variable (part 2) ([404e0c9](https://github.com/rweich/webworker-timer/commit/404e0c9e0ee90ca068a16b95ed3333249a11a0cf))
+
+
+### Documentation
+
+* add a bit of explanation to the readme ([2d2665d](https://github.com/rweich/webworker-timer/commit/2d2665de4316cc4246488f57f1b7c428ad3a69c0))
+
 ## [1.0.1](https://github.com/rweich/webworker-timer/compare/v1.0.0...v1.0.1) (2023-01-27)
 
 
