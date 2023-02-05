@@ -24,7 +24,7 @@ jobs:
             registry.npmjs.org:443
 
       - name: Get branch name
-        uses: tj-actions/branch-names@a594c1e96eab7790611fdaf5bc8f76ea55cedabd # 6.3
+        uses: tj-actions/branch-names@eee8675bd61ec38bcfbfedd504d8473292ba649e # 6.4
         id: branch-name
 
       - name: Checkout
