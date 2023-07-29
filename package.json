@@ -1,6 +1,6 @@
 {
   "name": "@rweich/webworker-timer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "timers running inside webworkers",
   "author": "@rweich",
   "license": "MIT",

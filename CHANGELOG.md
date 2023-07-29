@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/rweich/webworker-timer/compare/v1.0.3...v1.0.4) (2023-07-29)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump actions/checkout from 3.5.2 to 3.5.3 ([6aa807c](https://github.com/rweich/webworker-timer/commit/6aa807c21fb876d06f5cfddc20246cdcd4599230))
+* **deps:** bump actions/setup-node from 3.6.0 to 3.7.0 ([3981ae6](https://github.com/rweich/webworker-timer/commit/3981ae66f202da918c7866a33760d62b139c3dd5))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([141c3e9](https://github.com/rweich/webworker-timer/commit/141c3e990a698ed4df88b493d4eec065f5c9a611))
+* **deps:** bump step-security/harden-runner from 2.4.0 to 2.4.1 ([63f6bf7](https://github.com/rweich/webworker-timer/commit/63f6bf70a1d3da484c25621310bc5ff2d3978e55))
+* **deps:** bump wagoid/commitlint-github-action from 5.4.1 to 5.4.3 ([2030939](https://github.com/rweich/webworker-timer/commit/2030939053c27f6a98439fc783b661512a8a5eb4))
+* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([f25ac14](https://github.com/rweich/webworker-timer/commit/f25ac14f21c1d34a7fb64957fe189ccee057b637))
+
 ## [1.0.3](https://github.com/rweich/webworker-timer/compare/v1.0.2...v1.0.3) (2023-05-28)
 
 
