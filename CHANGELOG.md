@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/rweich/webworker-timer/compare/v1.0.4...v2.0.0) (2023-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove support for node < 18 as they're not officially
+supported anymore
+
+### Miscellaneous Chores
+
+* **deps:** bump actions/checkout from 3.5.3 to 3.6.0 ([fb02ec6](https://github.com/rweich/webworker-timer/commit/fb02ec6145dacff5d71a8555e6356781f97d314d))
+* **deps:** bump actions/checkout from 3.6.0 to 4.0.0 ([43f70d8](https://github.com/rweich/webworker-timer/commit/43f70d8f7ca154d717567f59617334fd9b0a7cd9))
+* **deps:** bump actions/checkout from 4.0.0 to 4.1.0 ([3308032](https://github.com/rweich/webworker-timer/commit/3308032e6aaee9e56a0d1063167d5e603a922021))
+* **deps:** bump actions/setup-node from 3.7.0 to 3.8.1 ([945f44f](https://github.com/rweich/webworker-timer/commit/945f44f03caa866e1598d1d1aa402c99bc773636))
+* **deps:** bump cycjimmy/semantic-release-action from 3.4.2 to 4.0.0 ([c4441af](https://github.com/rweich/webworker-timer/commit/c4441afb8e3f67f3159f497a86a55a46e591c17e))
+* **deps:** bump get-func-name from 2.0.0 to 2.0.2 ([8232ea7](https://github.com/rweich/webworker-timer/commit/8232ea7a635f556688b030949837a04519cb7cf9))
+* **deps:** bump step-security/harden-runner from 2.4.1 to 2.5.0 ([d23f838](https://github.com/rweich/webworker-timer/commit/d23f8388c70c6567ad5c2b50570a606785491eb5))
+* **deps:** bump step-security/harden-runner from 2.5.0 to 2.5.1 ([9956379](https://github.com/rweich/webworker-timer/commit/995637990feef3a87e3bbc74b72e0ce00ef6ae7b))
+* **deps:** bump step-security/harden-runner from 2.5.1 to 2.6.0 ([e3ce0b1](https://github.com/rweich/webworker-timer/commit/e3ce0b1a0af80a5f1cb97f25de70b179f010c654))
+* update dev-dependencies ([fe7b33a](https://github.com/rweich/webworker-timer/commit/fe7b33aca1f8f91ba470ad511a6d1c0b8c534f2e))
+* update supported node version ([1e92db5](https://github.com/rweich/webworker-timer/commit/1e92db580b18c281bcefb4811f9bc487d70735f2))
+
 ## [1.0.4](https://github.com/rweich/webworker-timer/compare/v1.0.3...v1.0.4) (2023-07-29)
 
 
