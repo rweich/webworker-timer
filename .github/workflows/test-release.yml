@@ -47,6 +47,23 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Test Outputs
-        if: steps.semantic.outputs.new_release_published == 'true'
         run: |
-          echo release version: ${{ steps.semantic.outputs.new_release_version }}
+          cat <<EOO >> $GITHUB_STEP_SUMMARY
+            ---
+
+            ### Semantic release output (DRY-RUN)
+
+            <table>
+              <tr><th>published</th><td>${{ steps.semantic.outputs.new_release_published }}</td></tr>
+              <tr><th>last release</th><td>${{ steps.semantic.outputs.last_release_version }}</td></tr>
+              <tr><th>next release</th><td>${{ steps.semantic.outputs.new_release_version }}</td></tr>
+            </table>
+
+            ---
+
+            #### Release-Notes
+
+            ${{ steps.semantic.outputs.new_release_notes }}
+
+          ---
+          EOO
