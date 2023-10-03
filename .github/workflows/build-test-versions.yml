@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 14.x, 16.x, 18.x, 19.x ]
+        node-version: [ 18.x, 20.x ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -21,6 +21,7 @@ jobs:
           allowed-endpoints: >
             api.github.com:443
             github.com:443
+            objects.githubusercontent.com:443
             nodejs.org:443
             registry.npmjs.org:443
             registry.yarnpkg.com:443
