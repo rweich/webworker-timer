@@ -20,8 +20,8 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@rweich/eslint-config": "^2.0.1",
-    "@rweich/prettier-config": "^2.0.0",
+    "@rweich/eslint-config": "^3.0.0",
+    "@rweich/prettier-config": "^2.0.4",
     "@rweich/semantic-release-config": "^2.0.6",
     "@types/chai": "^4.3.0",
     "@types/mocha": "^10.0.0",
@@ -33,12 +33,12 @@
     "karma-firefox-launcher": "^2.1.2",
     "karma-mocha": "^2.0.1",
     "karma-typescript": "^5.5.3",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^14.0.1",
     "mocha": "^10.1.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.5",
     "semantic-release": "^19.0.2",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.5"
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=18"
