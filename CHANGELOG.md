@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/rweich/webworker-timer/compare/v2.0.0...v2.0.1) (2023-11-12)
+
+
+### Miscellaneous Chores
+
+* update dependencies ([f94b4b7](https://github.com/rweich/webworker-timer/commit/f94b4b7a0c1c78e992512101c83e6202c729e731))
+
 ## [2.0.0](https://github.com/rweich/webworker-timer/compare/v1.0.4...v2.0.0) (2023-10-03)
 
 
