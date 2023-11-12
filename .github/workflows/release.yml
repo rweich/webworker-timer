@@ -22,13 +22,13 @@ jobs:
             registry.yarnpkg.com:443
 
       - name: Checkout
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # 4.1.0
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # 4.1.1
         with:
           persist-credentials: false
           token: ${{ secrets.SEMANTIC_RELEASE_PAT }}
 
       - name: Install Node
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # 3.8.1
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # 4.0.0
         with:
           node-version: 18
 
@@ -42,13 +42,14 @@ jobs:
         uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4 # 4.0.0
         id: semantic
         with:
-          semantic_version: 19.0.2
+          semantic_version: 22
           branch: main
           extends: |
-            @rweich/semantic-release-config
+            @rweich/semantic-release-config@3
           extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
+            @semantic-release/changelog@6
+            @semantic-release/git@10
+            conventional-changelog-conventionalcommits@7
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
