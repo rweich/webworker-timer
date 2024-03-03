@@ -24,8 +24,15 @@ jobs:
             registry.npmjs.org:443
 
       - name: Get branch name
-        uses: tj-actions/branch-names@2e5354c6733793113f416314375826df030ada23 # 6.5
+        uses: tj-actions/branch-names@6871f53176ad61624f978536bbf089c574dc19a2 # 8.0.1
         id: branch-name
+      - name: Got branch name
+        run: |
+          cat <<EOO >> $GITHUB_STEP_SUMMARY
+          ---
+          ### 🌿 Running on branch: ${{ steps.branch-name.outputs.current_branch }}
+          ---
+          EOO
 
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # 4.1.1
