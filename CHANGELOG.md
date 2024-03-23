@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/rweich/webworker-timer/compare/v2.0.1...v2.0.2) (2024-03-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump actions/setup-node from 4.0.0 to 4.0.1 ([8e97823](https://github.com/rweich/webworker-timer/commit/8e97823e9f29ba54f95e51c77875405c681d58bf))
+* **deps:** bump follow-redirects from 1.15.3 to 1.15.4 ([c4b181a](https://github.com/rweich/webworker-timer/commit/c4b181a15db24dfa67ed3489a3a1dcc16c04f30e))
+* **deps:** bump follow-redirects from 1.15.4 to 1.15.6 ([ed8a7f9](https://github.com/rweich/webworker-timer/commit/ed8a7f965a5f522ec5d4255b053cf0c00b2d41e1))
+* **deps:** bump ip from 2.0.0 to 2.0.1 ([2617ec5](https://github.com/rweich/webworker-timer/commit/2617ec56588b2289b959b004bfb9d0076cf93dac))
+* **deps:** bump step-security/harden-runner from 2.6.0 to 2.6.1 ([5e96456](https://github.com/rweich/webworker-timer/commit/5e964561b6fa4ef6e2ed0f1e4ee668f4f617540e))
+
 ## [2.0.1](https://github.com/rweich/webworker-timer/compare/v2.0.0...v2.0.1) (2023-11-12)
 
 
