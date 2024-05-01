@@ -26,7 +26,7 @@ jobs:
           fetch-depth: 0
 
       - name: Lint
-        uses: wagoid/commitlint-github-action@0d749a1a91d4770e983a7b8f83d4a3f0e7e0874e # 5.4.4
+        uses: wagoid/commitlint-github-action@7f0a61df502599e1f1f50880aaa7ec1e2c0592f2 # 6.0.1
         with:
           configFile: package.json
           failOnWarnings: true
